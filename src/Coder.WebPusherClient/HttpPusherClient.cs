@@ -1,16 +1,61 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using Coder.WebPusherService.Senders.HttpSender;
+using Coder.WebPusherService.Senders.HttpSender.ViewModel;
 using Coder.WebPusherService.ViewModels;
 using Newtonsoft.Json;
 
 namespace Coder.WebPusherClient
 {
+    public class HttpMessageSettingClient
+    {
+        private const string Path = "/pusher-service/manage/HttpNotifySetting";
+        private readonly string _url;
+        private HttpClient _httpClient;
+
+        public HttpMessageSettingClient(HttpClient httpClient)
+        {
+            _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+        }
+
+        public HttpMessageSettingClient(string url)
+        {
+            _url = url;
+        }
+
+        private HttpClient GetClient()
+        {
+            if (_httpClient == null) return _httpClient = new HttpClient { BaseAddress = new Uri(_url) };
+
+            return _httpClient;
+        }
+
+        public HttpNotifySettingDetailViewModel Get(int id)
+        {
+            var response = _httpClient.GetAsync(Path + "/" + id).Result;
+
+            var str = response.Content.ReadAsStringAsync().Result;
+            var result = JsonConvert.DeserializeObject<HttpNotifySettingDetailViewModel>(str);
+            return result;
+        }
+
+        public NotifyResult Save(HttpNotifySettingDetailViewModel settring)
+        {
+            var str = JsonConvert.SerializeObject(settring);
+            var content = new StringContent(str, Encoding.UTF8, "application/json");
+            var response = _httpClient.PostAsync(Path + "/save", content).Result;
+            var responseStr = response.Content.ReadAsStringAsync().Result;
+            var result = JsonConvert.DeserializeObject<NotifyResult>(responseStr);
+            return result;
+        }
+    }
+
     public class HttpPusherClient
     {
-        private readonly string _host;
         private readonly HttpClient _client = new HttpClient();
+        private readonly string _host;
 
         public HttpPusherClient(string host)
         {

@@ -3,12 +3,29 @@ using System.Collections.Generic;
 
 namespace Coder.WebPusherService.Senders.HttpSender.ViewModel
 {
-    public class HttpNotifySettingDetailViewModel
+    public class NotifyBaseSetting
+    {
+        public NotifyBaseSetting(NotifySettingBase setting)
+        {
+            this.MessageType = setting.MessageType;
+            this.RetrySpreadSeconds = setting.RetrySpreadSeconds;
+            this.MaxRetry = setting.MaxRetry;
+        }
+        public NotifyBaseSetting()
+        {
+
+        }
+        public string MessageType { get; set; }
+        public int RetrySpreadSeconds { get; set; } = 20;
+        public int MaxRetry { get; set; } = 3;
+    }
+    public class HttpNotifySettingDetailViewModel : NotifyBaseSetting
     {
         public HttpNotifySettingDetailViewModel()
         {
         }
-        public HttpNotifySettingDetailViewModel(HttpNotifySetting setting)
+
+        public HttpNotifySettingDetailViewModel(HttpNotifySetting setting) : base(setting)
         {
             if (setting == null) throw new ArgumentNullException(nameof(setting));
             Id = setting.Id;

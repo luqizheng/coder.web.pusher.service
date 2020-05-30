@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace Coder.WebPusher
@@ -23,11 +22,10 @@ namespace Coder.WebPusher
             var starck = new Stack<string>(ary);
 
             while (starck.Count != 0)
-                if (!Directory.Exists(starck.Peek()))
-                {
-                    var parentDir = starck.Pop();
-                    Directory.CreateDirectory(parentDir);
-                }
+            {
+                var parentDir = starck.Pop();
+                if (!Directory.Exists(parentDir)) Directory.CreateDirectory(parentDir);
+            }
         }
     }
 }

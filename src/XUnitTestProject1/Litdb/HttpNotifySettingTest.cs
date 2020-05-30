@@ -22,8 +22,5 @@ namespace XUnitTestProject1.Litdb
             var target = store.GetBy<NotifySettingBase>(actual.ContentType);
             Assert.NotNull(target);
         }
-
-
-
     }
 }

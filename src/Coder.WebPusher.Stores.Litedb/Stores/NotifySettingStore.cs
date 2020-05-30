@@ -61,23 +61,30 @@ namespace Coder.WebPusher.Stores
         public void SaveOrUpdate(NotifySettingBase setting)
         {
             if (setting == null) throw new ArgumentNullException(nameof(setting));
-            var dbFolder = Path.Combine(_folder, "notifySettings.db");
-            using (var db = new LiteDatabase(dbFolder))
+            if (setting.MessageType == null)
             {
-                // Get customer collection
-                var customers = db.GetCollection<NotifySettingBase>("notifySetting");
-                customers.EnsureIndex(_ => _.MessageType, true);
+                throw new NotifySettingException("请输入MessageType");
+            }
+            var dbFolder = Path.Combine(_folder, "notifySettings.db");
+            using var db = new LiteDatabase(dbFolder);
+            // Get customer collection
+            var customers = db.GetCollection<NotifySettingBase>("notifySetting");
+            customers.EnsureIndex(_ => _.MessageType, true);
 
+
+
+            if (setting.Id == 0)
+            {
                 var exist = customers.FindOne(_ => _.MessageType == setting.MessageType);
                 if (exist != null)
                 {
-                    throw new ArgumentNullException(nameof(setting), setting.MessageType + "已经存在相同的类型。");
+                    throw new NotifySettingException(setting.MessageType + "已经存在相同的类型" + setting.MessageType);
                 }
-
-                if (setting.Id == 0)
-                    customers.Insert(setting);
-                customers.Update(setting);
+                var id = customers.Insert(setting);
+                setting.Id = id.AsInt32;
             }
+
+            customers.Update(setting);
         }
     }
 }

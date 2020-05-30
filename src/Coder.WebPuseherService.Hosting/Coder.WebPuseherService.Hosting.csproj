@@ -1,19 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <AssemblyName>Coder.WebPusher.Stores.LiteDb</AssemblyName>
-    <RootNamespace>Coder.WebPusher</RootNamespace>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="LiteDB" Version="5.0.8" />
-  </ItemGroup>
+
 
   <ItemGroup>
+    <Folder Include="Db\" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Coder.WebPusher.Stores.Litedb\Coder.WebPusher.Stores.Litedb.csproj" />
     <ProjectReference Include="..\Coder.WebPusherService.Core\Coder.WebPusherService.Core.csproj" />
     <ProjectReference Include="..\Coder.WebPusherService\Coder.WebPusherService.csproj" />
-  
   </ItemGroup>
 
 </Project>
