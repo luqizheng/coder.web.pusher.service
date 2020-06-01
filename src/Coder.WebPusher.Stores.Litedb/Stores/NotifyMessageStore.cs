@@ -54,7 +54,7 @@ namespace Coder.WebPusher.Stores
             }
         }
 
-   
+
         public IEnumerable<NotifyMessage> FindByTag(string tag)
         {
 
@@ -64,7 +64,7 @@ namespace Coder.WebPusher.Stores
                 // Get customer collection
                 var customers = db.GetCollection<NotifyMessage>("notifySetting");
 
-                return customers.Find(_ => _.Tag == tag);
+                return customers.Find(_ => _.Tag == tag).ToList();
             }
         }
     }

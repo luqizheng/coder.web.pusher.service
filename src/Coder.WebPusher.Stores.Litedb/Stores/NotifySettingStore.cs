@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Coder.WebPusherService;
 using Coder.WebPusherService.Stores;
 using LiteDB;
@@ -65,18 +66,18 @@ namespace Coder.WebPusher.Stores
             using (var db = new LiteDatabase(dbFolder))
             {
                 // Get customer collection
-                var customers = db.GetCollection<T>("notifySetting");
-                customers.EnsureIndex(_ => _.MessageType, true);
+                var settings = db.GetCollection<T>("notifySetting");
+                settings.EnsureIndex(_ => _.MessageType, true);
                 var skip = (page - 1) * pageSize;
 
                 if (!String.IsNullOrWhiteSpace(messageType))
                 {
-                    total = customers.Count(_ => _.MessageType == messageType);
-                    return customers.Find(_ => _.MessageType == messageType, skip, pageSize);
+                    total = settings.Count(_ => _.MessageType == messageType);
+                    return settings.Find(_ => _.MessageType == messageType, skip, pageSize).ToList();
                 }
 
-                total = customers.Count();
-                return customers.Find(_ => true, skip, pageSize);
+                total = settings.Count();
+                return settings.Find(_ => true, skip, pageSize).ToList();
 
 
             }
