@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using Coder.WebPusherService;
 using Coder.WebPusherService.Stores;
@@ -55,6 +56,29 @@ namespace Coder.WebPusher.Stores
                 var customers = db.GetCollection<NotifySettingBase>("notifySetting");
                 customers.EnsureIndex(_ => _.MessageType, true);
                 customers.Delete(id);
+            }
+        }
+
+        public IEnumerable<T> List<T>(string messageType, in int page, in int pageSize, out int total) where T : NotifySettingBase
+        {
+            var dbFolder = Path.Combine(_folder, "notifySettings.db");
+            using (var db = new LiteDatabase(dbFolder))
+            {
+                // Get customer collection
+                var customers = db.GetCollection<T>("notifySetting");
+                customers.EnsureIndex(_ => _.MessageType, true);
+                var skip = (page - 1) * pageSize;
+
+                if (!String.IsNullOrWhiteSpace(messageType))
+                {
+                    total = customers.Count(_ => _.MessageType == messageType);
+                    return customers.Find(_ => _.MessageType == messageType, skip, pageSize);
+                }
+
+                total = customers.Count();
+                return customers.Find(_ => true, skip, pageSize);
+
+
             }
         }
 

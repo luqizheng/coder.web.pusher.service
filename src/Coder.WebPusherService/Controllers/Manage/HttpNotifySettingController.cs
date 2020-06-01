@@ -23,7 +23,14 @@ namespace Coder.WebPusherService.Controllers.Manage
             var result = _settingStore.GetById<HttpNotifySetting>(id);
             if (result == null)
                 return NotFound();
-            return Ok(new HttpNotifySettingDetailViewModel(result));
+            return Json(new HttpNotifySettingDetailViewModel(result));
+        }
+
+        [HttpGet("list")]
+        public IActionResult List(string messageType, int page, int pageSize)
+        {
+            var result = _settingStore.List<HttpNotifySetting>(messageType, page, pageSize,out var total);
+            return Json(new {data = result, total});
         }
 
         [HttpPost("save")]
@@ -45,11 +52,11 @@ namespace Coder.WebPusherService.Controllers.Manage
             try
             {
                 _settingStore.SaveOrUpdate(result);
-                return Ok(new NotifyResult { Id = notifySettingBase.Id, Success = true });
+                return Json(new NotifyResult { Id = notifySettingBase.Id, Success = true });
             }
             catch (NotifySettingException ex)
             {
-                return Ok(new NotifyResult { Id = notifySettingBase.Id, Success = false, Message = ex.Message });
+                return Json(new NotifyResult { Id = notifySettingBase.Id, Success = false, Message = ex.Message });
             }
         }
 
@@ -57,7 +64,7 @@ namespace Coder.WebPusherService.Controllers.Manage
         public IActionResult Delete([FromRoute] int id)
         {
             _settingStore.DeleteById(id);
-            return Ok(new { success = true });
+            return Json(new { success = true });
         }
     }
 }

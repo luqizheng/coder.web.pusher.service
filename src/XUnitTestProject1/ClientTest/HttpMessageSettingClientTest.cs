@@ -3,6 +3,7 @@ using Coder.WebPuseherService.Hosting;
 using Coder.WebPusherClient;
 using Coder.WebPusherService.Senders.HttpSender;
 using Coder.WebPusherService.Senders.HttpSender.ViewModel;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit;
 
@@ -32,6 +33,12 @@ namespace XUnitTestProject1.ClientTest
                 response.Content.Headers.ContentType.ToString());
         }
 
+        [Fact]
+        public void TestList()
+        {
+            var client = new HttpMessageSettingClient(_factory.CreateClient());
+            var data = client.List(out var total);
+        }
         [Fact]
         public void TestSave()
         {
