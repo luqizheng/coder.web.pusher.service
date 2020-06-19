@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Net.Http;
-using System.Text;
-using Coder.WebPusherService.Senders.HttpSender.ViewModel;
+﻿using Coder.WebPusherService.Senders.HttpSender.ViewModel;
 using Coder.WebPusherService.ViewModels;
 using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Text;
 
 namespace Coder.WebPusherClient
 {
@@ -28,7 +27,7 @@ namespace Coder.WebPusherClient
         private HttpClient GetClient()
         {
             if (_httpClient == null) return _httpClient = new HttpClient { BaseAddress = new Uri(_url) };
-         
+
             return _httpClient;
         }
 
@@ -46,12 +45,12 @@ namespace Coder.WebPusherClient
             var content = new StringContent(str, Encoding.UTF8, "application/json");
             var response = GetClient().PostAsync(Path + "/save", content).Result;
             var responseStr = response.Content.ReadAsStringAsync().Result;
-            if (response.StatusCode == HttpStatusCode.Accepted)
+            if (response.IsSuccessStatusCode)
             {
                 var result = JsonConvert.DeserializeObject<NotifyResult>(responseStr);
                 return result;
             }
-            throw new Exception("Exception from server:"+ responseStr);
+            throw new Exception("Exception from server:" + responseStr);
         }
 
         public IEnumerable<HttpNotifySettingDetailViewModel> List(out int total, string messageType = null, int page = 1, int pageSize = 30)

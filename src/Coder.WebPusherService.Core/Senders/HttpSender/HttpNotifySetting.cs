@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Coder.WebPusherService.Senders.HttpSender.HttpNotify;
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Coder.WebPusherService.Senders.HttpSender.HttpNotify;
 
 namespace Coder.WebPusherService.Senders.HttpSender
 {
@@ -32,7 +32,7 @@ namespace Coder.WebPusherService.Senders.HttpSender
         /// <summary>
         ///     contentType，默认null的情况下， 如果SendType就用Application/Json,否则就是formUrlEncoding,
         /// </summary>
-        public string ContentType { get; set; }
+        public string SendContentType { get; set; } = "Application/Json";
 
         /// <summary>
         ///     当SendType=FormUrlEncoding的时候使用这个template。

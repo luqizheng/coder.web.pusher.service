@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Coder.WebPusherService;
+using Coder.WebPusherService.Stores;
+using LiteDB;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Coder.WebPusherService;
-using Coder.WebPusherService.Stores;
-using LiteDB;
 
 namespace Coder.WebPusher.Stores
 {
@@ -65,6 +65,19 @@ namespace Coder.WebPusher.Stores
                 var customers = db.GetCollection<NotifyMessage>("notifySetting");
 
                 return customers.Find(_ => _.Tag == tag).ToList();
+            }
+        }
+
+        public IEnumerable<NotifyMessage> GetUnsentMessage(string settingMessageType)
+        {
+
+            var dbFolder = Path.Combine(_folder, "message.db");
+            using (var db = new LiteDatabase(dbFolder))
+            {
+                // Get customer collection
+                var customers = db.GetCollection<NotifyMessage>("notifySetting");
+
+                return customers.Find(_ => _.MessageType == settingMessageType && (_.Status == SenderStatus.Sending || _.Status == SenderStatus.Wait)).ToList();
             }
         }
     }

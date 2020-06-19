@@ -32,7 +32,7 @@ namespace Coder.WebPusherService.Senders.HttpSender.ViewModel
             Url = setting.Url;
             SendType = setting.SendType;
             Method = setting.Method;
-            ContentType = setting.ContentType;
+            ContentType = setting.SendContentType;
             SubmitDataTemplate = setting.SubmitDataTemplate;
             RawContentTemplate = setting.RawContentTemplate;
         }

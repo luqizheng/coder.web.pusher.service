@@ -45,5 +45,10 @@ namespace Coder.WebPusherService
             Status = SenderStatus.Sending;
             SendCount++;
         }
+
+        public void FailToSent()
+        {
+            this.Status = SenderStatus.Fail;
+        }
     }
 }

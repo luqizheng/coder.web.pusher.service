@@ -1,10 +1,9 @@
-﻿using System;
-using Coder.WebPuseherService.Hosting;
+﻿using Coder.WebPuseherService.Hosting;
 using Coder.WebPusherClient;
 using Coder.WebPusherService.Senders.HttpSender;
 using Coder.WebPusherService.Senders.HttpSender.ViewModel;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Testing;
+using System;
 using Xunit;
 
 namespace XUnitTestProject1.ClientTest
@@ -29,8 +28,6 @@ namespace XUnitTestProject1.ClientTest
 
             // Assert
             response.EnsureSuccessStatusCode(); // Status Code 200-299
-            Assert.Equal("text/html; charset=utf-8",
-                response.Content.Headers.ContentType.ToString());
         }
 
         [Fact]
@@ -39,6 +36,7 @@ namespace XUnitTestProject1.ClientTest
             var client = new HttpMessageSettingClient(_factory.CreateClient());
             var data = client.List(out var total);
         }
+
         [Fact]
         public void TestSave()
         {

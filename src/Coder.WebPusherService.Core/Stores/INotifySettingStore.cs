@@ -10,5 +10,6 @@ namespace Coder.WebPusherService.Stores
         void SaveChanged();
         void DeleteById(in int id);
         IEnumerable<T> List<T>(string messageType, in int page, in int pageSize,out int total) where T : NotifySettingBase;
+        IEnumerable<T> GetAll<T>() where T : NotifySettingBase;
     }
 }

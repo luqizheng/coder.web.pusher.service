@@ -1,0 +1,2555 @@
+{
+  "Coder.WebPuseherService.Hosting.dll": {
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPuseherService.Hosting\\Program.cs": {
+      "Coder.WebPuseherService.Hosting.Program": {
+        "System.Void Coder.WebPuseherService.Hosting.Program::Main(System.String[])": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.Extensions.Hosting.IHostBuilder Coder.WebPuseherService.Hosting.Program::CreateHostBuilder(System.String[])": {
+          "Lines": {
+            "20": 1,
+            "21": 1,
+            "22": 2,
+            "23": 2,
+            "24": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPuseherService.Hosting\\Startup.cs": {
+      "Coder.WebPuseherService.Hosting.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration Coder.WebPuseherService.Hosting.Startup::get_Configuration()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPuseherService.Hosting.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "27": 1,
+            "28": 1,
+            "29": 2,
+            "30": 1,
+            "31": 1
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPuseherService.Hosting.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
+          "Lines": {
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "41": 0,
+            "42": 0,
+            "44": 0,
+            "45": 0,
+            "47": 1,
+            "48": 1,
+            "50": 1,
+            "52": 1,
+            "54": 1,
+            "55": 2,
+            "56": 2,
+            "57": 2,
+            "58": 2,
+            "59": 1
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 36,
+              "Offset": 9,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Coder.WebPuseherService.Hosting.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Coder.WebPusher.Stores.LiteDb.dll": {
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusher.Stores.Litedb\\FileUtility.cs": {
+      "Coder.WebPusher.FileUtility": {
+        "System.String Coder.WebPusher.FileUtility::GetStandardFileName(System.String)": {
+          "Lines": {
+            "13": 1,
+            "14": 0,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 7,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Coder.WebPusher.FileUtility::AutoCreateDirectory(System.String)": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": [
+            {
+              "Line": 20,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 7,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 96,
+              "EndOffset": 52,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 73,
+              "EndOffset": 75,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 73,
+              "EndOffset": 82,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 96,
+              "EndOffset": 98,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Coder.WebPusher.FileUtility::.cctor()": {
+          "Lines": {
+            "10": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusher.Stores.Litedb\\LiteDbExtensions.cs": {
+      "Coder.WebPusher.LiteDbExtensions": {
+        "Coder.WebPusherService.NotifyServiceOptions Coder.WebPusher.LiteDbExtensions::AddNotifyServiceLiteDb(Coder.WebPusherService.NotifyServiceOptions,System.String)": {
+          "Lines": {
+            "12": 1,
+            "13": 0,
+            "14": 4,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusher.Stores.Litedb\\Stores\\NotifyMessageStore.cs": {
+      "Coder.WebPusher.Stores.NotifyMessageStore": {
+        "System.Void Coder.WebPusher.Stores.NotifyMessageStore::Update(Coder.WebPusherService.NotifyMessage)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "28": 0,
+            "29": 0,
+            "31": 0,
+            "33": 0,
+            "34": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": [
+            {
+              "Line": 33,
+              "Offset": 52,
+              "EndOffset": 54,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 52,
+              "EndOffset": 64,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Coder.WebPusher.Stores.NotifyMessageStore::SaveChange()": {
+          "Lines": {
+            "41": 0,
+            "43": 0
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.NotifyMessage Coder.WebPusher.Stores.NotifyMessageStore::GetById(System.Int32)": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "51": 0,
+            "53": 0,
+            "55": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<Coder.WebPusherService.NotifyMessage> Coder.WebPusher.Stores.NotifyMessageStore::FindByTag(System.String)": {
+          "Lines": {
+            "59": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "65": 0,
+            "67": 0,
+            "69": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<Coder.WebPusherService.NotifyMessage> Coder.WebPusher.Stores.NotifyMessageStore::GetUnsentMessage(System.String)": {
+          "Lines": {
+            "72": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "78": 0,
+            "80": 0,
+            "82": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusher.Stores.NotifyMessageStore::.ctor(System.String)": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": [
+            {
+              "Line": 19,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 14,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusher.Stores.Litedb\\Stores\\NotifySettingStore.cs": {
+      "Coder.WebPusher.Stores.NotifySettingStore": {
+        "T Coder.WebPusher.Stores.NotifySettingStore::GetById(System.Int32)": {
+          "Lines": {
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "32": 1
+          },
+          "Branches": []
+        },
+        "T Coder.WebPusher.Stores.NotifySettingStore::GetBy(System.String)": {
+          "Lines": {
+            "35": 1,
+            "36": 0,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "45": 1
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 25,
+              "EndOffset": 27,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 36,
+              "Offset": 25,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Coder.WebPusher.Stores.NotifySettingStore::SaveChanged()": {
+          "Lines": {
+            "48": 0,
+            "49": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusher.Stores.NotifySettingStore::DeleteById(System.Int32&)": {
+          "Lines": {
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<T> Coder.WebPusher.Stores.NotifySettingStore::List(System.String,System.Int32&,System.Int32&,System.Int32&)": {
+          "Lines": {
+            "65": 1,
+            "66": 1,
+            "67": 1,
+            "69": 1,
+            "70": 1,
+            "71": 1,
+            "73": 1,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "79": 1,
+            "80": 1,
+            "81": 1
+          },
+          "Branches": [
+            {
+              "Line": 73,
+              "Offset": 148,
+              "EndOffset": 153,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 73,
+              "Offset": 148,
+              "EndOffset": 384,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Collections.Generic.IEnumerable`1<T> Coder.WebPusher.Stores.NotifySettingStore::GetAll()": {
+          "Lines": {
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusher.Stores.NotifySettingStore::SaveOrUpdate(Coder.WebPusherService.NotifySettingBase)": {
+          "Lines": {
+            "94": 2,
+            "95": 0,
+            "96": 0,
+            "97": 2,
+            "98": 2,
+            "100": 2,
+            "101": 2,
+            "104": 2,
+            "105": 2,
+            "106": 2,
+            "107": 2,
+            "108": 0,
+            "109": 2,
+            "110": 2,
+            "111": 2,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 4
+          },
+          "Branches": [
+            {
+              "Line": 95,
+              "Offset": 27,
+              "EndOffset": 29,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 95,
+              "Offset": 27,
+              "EndOffset": 40,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 96,
+              "Offset": 58,
+              "EndOffset": 60,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 96,
+              "Offset": 58,
+              "EndOffset": 71,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 104,
+              "Offset": 196,
+              "EndOffset": 201,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 2
+            },
+            {
+              "Line": 107,
+              "Offset": 335,
+              "EndOffset": 337,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 107,
+              "Offset": 335,
+              "EndOffset": 375,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 2
+            },
+            {
+              "Line": 104,
+              "Offset": 196,
+              "EndOffset": 411,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Coder.WebPusher.Stores.NotifySettingStore::.ctor(System.String)": {
+          "Lines": {
+            "15": 4,
+            "16": 4,
+            "17": 5,
+            "19": 4,
+            "20": 4
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 17,
+              "Offset": 19,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Coder.WebPusherClient.dll": {
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherClient\\HttpMessageSettingClient.cs": {
+      "Coder.WebPusherClient.HttpMessageSettingClient": {
+        "System.Net.Http.HttpClient Coder.WebPusherClient.HttpMessageSettingClient::GetClient()": {
+          "Lines": {
+            "28": 2,
+            "29": 0,
+            "31": 2,
+            "32": 2
+          },
+          "Branches": [
+            {
+              "Line": 29,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 12,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel Coder.WebPusherClient.HttpMessageSettingClient::Get(System.Int32)": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.ViewModels.NotifyResult Coder.WebPusherClient.HttpMessageSettingClient::Save(Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel)": {
+          "Lines": {
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "53": 0,
+            "54": 1
+          },
+          "Branches": [
+            {
+              "Line": 48,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 48,
+              "Offset": 75,
+              "EndOffset": 92,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.IEnumerable`1<Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel> Coder.WebPusherClient.HttpMessageSettingClient::List(System.Int32&,System.String,System.Int32,System.Int32)": {
+          "Lines": {
+            "57": 1,
+            "58": 1,
+            "59": 0,
+            "61": 1,
+            "62": 1,
+            "63": 1,
+            "64": 1,
+            "65": 1,
+            "66": 1
+          },
+          "Branches": [
+            {
+              "Line": 59,
+              "Offset": 38,
+              "EndOffset": 40,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 38,
+              "EndOffset": 53,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Coder.WebPusherClient.HttpMessageSettingClient::.ctor(System.Net.Http.HttpClient)": {
+          "Lines": {
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2
+          },
+          "Branches": [
+            {
+              "Line": 19,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 11,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void Coder.WebPusherClient.HttpMessageSettingClient::.ctor(System.String)": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": []
+        }
+      },
+      "Coder.WebPusherClient.HttpMessageSettingClient/HttpNotifySettingDetailViewModelResult": {
+        "System.Collections.Generic.IEnumerable`1<Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel> Coder.WebPusherClient.HttpMessageSettingClient/HttpNotifySettingDetailViewModelResult::get_Data()": {
+          "Lines": {
+            "70": 3
+          },
+          "Branches": []
+        },
+        "System.Int32 Coder.WebPusherClient.HttpMessageSettingClient/HttpNotifySettingDetailViewModelResult::get_Count()": {
+          "Lines": {
+            "71": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherClient\\HttpPusherClient.cs": {
+      "Coder.WebPusherClient.HttpPusherClient": {
+        "Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1<Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent> Coder.WebPusherClient.HttpPusherClient::Send(Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent,System.String,System.String)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 9,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1<Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent> Coder.WebPusherClient.HttpPusherClient::Retry(System.String)": {
+          "Lines": {
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1<Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent> Coder.WebPusherClient.HttpPusherClient::Get(System.String)": {
+          "Lines": {
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1<Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent>> Coder.WebPusherClient.HttpPusherClient::List(System.String)": {
+          "Lines": {
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherClient.HttpPusherClient::.ctor(System.String)": {
+          "Lines": {
+            "13": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 18,
+              "Offset": 35,
+              "EndOffset": 37,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 18,
+              "Offset": 35,
+              "EndOffset": 50,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Coder.WebPusherService.Core.dll": {
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService.Core\\NotifyMessage.cs": {
+      "Coder.WebPusherService.NotifyMessage": {
+        "System.Int32 Coder.WebPusherService.NotifyMessage::get_Id()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.NotifyMessage::get_Tag()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.SenderStatus Coder.WebPusherService.NotifyMessage::get_Status()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset Coder.WebPusherService.NotifyMessage::get_CompleteSendTime()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset Coder.WebPusherService.NotifyMessage::get_StartSendTime()": {
+          "Lines": {
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset Coder.WebPusherService.NotifyMessage::get_CreateTime()": {
+          "Lines": {
+            "26": 0
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.NotifyMessage::get_MessageType()": {
+          "Lines": {
+            "28": 0
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.INotifyContent Coder.WebPusherService.NotifyMessage::get_Content()": {
+          "Lines": {
+            "30": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean Coder.WebPusherService.NotifyMessage::get_Success()": {
+          "Lines": {
+            "32": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Coder.WebPusherService.NotifyMessage::get_SendCount()": {
+          "Lines": {
+            "33": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.NotifyMessage::Sent(System.Boolean)": {
+          "Lines": {
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": [
+            {
+              "Line": 38,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 11,
+              "EndOffset": 16,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Coder.WebPusherService.NotifyMessage::StartSend()": {
+          "Lines": {
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.NotifyMessage::FailToSent()": {
+          "Lines": {
+            "50": 0,
+            "51": 0,
+            "52": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.NotifyMessage::.ctor()": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.NotifyMessage::.ctor(System.String)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService.Core\\NotifySettingBase.cs": {
+      "Coder.WebPusherService.NotifySettingBase": {
+        "Coder.WebPusherService.NotifySettingStatus Coder.WebPusherService.NotifySettingBase::get_Status()": {
+          "Lines": {
+            "32": 38
+          },
+          "Branches": []
+        },
+        "System.Int32 Coder.WebPusherService.NotifySettingBase::get_Id()": {
+          "Lines": {
+            "33": 53
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.NotifySettingBase::get_MessageType()": {
+          "Lines": {
+            "34": 50
+          },
+          "Branches": []
+        },
+        "System.Int32 Coder.WebPusherService.NotifySettingBase::get_RetrySpreadSeconds()": {
+          "Lines": {
+            "35": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Coder.WebPusherService.NotifySettingBase::get_MaxRetry()": {
+          "Lines": {
+            "36": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.NotifySettingBase::Stop()": {
+          "Lines": {
+            "41": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.NotifySettingBase::Pause()": {
+          "Lines": {
+            "47": 0,
+            "48": 0,
+            "49": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.NotifySettingBase::Resume()": {
+          "Lines": {
+            "52": 0,
+            "53": 0,
+            "54": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.NotifySettingBase::.ctor()": {
+          "Lines": {
+            "23": 27,
+            "24": 27,
+            "25": 27
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.NotifySettingBase::.ctor(System.String)": {
+          "Lines": {
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0
+          },
+          "Branches": [
+            {
+              "Line": 29,
+              "Offset": 29,
+              "EndOffset": 31,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 29,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService.Core\\SenderStatus.cs": {
+      "Coder.WebPusherService.NotifySettingException": {
+        "System.Void Coder.WebPusherService.NotifySettingException::.ctor(System.String)": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService.Core\\ViewModels\\NotifyMessageViewModel.cs": {
+      "Coder.WebPusherService.ViewModels.NotifyResult": {
+        "System.Boolean Coder.WebPusherService.ViewModels.NotifyResult::get_Success()": {
+          "Lines": {
+            "8": 4
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.ViewModels.NotifyResult::get_Message()": {
+          "Lines": {
+            "9": 2
+          },
+          "Branches": []
+        },
+        "System.Int32 Coder.WebPusherService.ViewModels.NotifyResult::get_Id()": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        }
+      },
+      "Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1": {
+        "System.Int32 Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1::get_Id()": {
+          "Lines": {
+            "34": 0
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1::get_Tag()": {
+          "Lines": {
+            "35": 0
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.SenderStatus Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1::get_Status()": {
+          "Lines": {
+            "36": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1::get_CompleteSendTime()": {
+          "Lines": {
+            "38": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1::get_StartSendTime()": {
+          "Lines": {
+            "39": 0
+          },
+          "Branches": []
+        },
+        "System.DateTimeOffset Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1::get_CreateTime()": {
+          "Lines": {
+            "43": 0
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1::get_MessageType()": {
+          "Lines": {
+            "45": 0
+          },
+          "Branches": []
+        },
+        "T Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1::get_Content()": {
+          "Lines": {
+            "47": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1::get_Success()": {
+          "Lines": {
+            "49": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1::get_SendCount()": {
+          "Lines": {
+            "50": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.ViewModels.NotifyMessageViewModel`1::.ctor(Coder.WebPusherService.NotifyMessage)": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService.Core\\Senders\\HttpSender\\HttpDictionaryContent.cs": {
+      "Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent": {
+        "System.Collections.Generic.IDictionary`2<System.String,System.String> Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent::get_Content()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent::get_ResponseContent()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent::get_ResponseCode()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent::.ctor()": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService.Core\\Senders\\HttpSender\\HttpNotifySetting.cs": {
+      "Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting": {
+        "System.String Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::get_Url()": {
+          "Lines": {
+            "28": 54
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.Senders.HttpSender.HttpNotifyMessageMethod Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::get_Method()": {
+          "Lines": {
+            "29": 46
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.Senders.HttpSender.SendType Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::get_SendType()": {
+          "Lines": {
+            "30": 46
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::get_SendContentType()": {
+          "Lines": {
+            "35": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IList`1<Coder.WebPusherService.Senders.HttpSender.Variable> Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::get_SubmitDataTemplate()": {
+          "Lines": {
+            "40": 0
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::get_RawContentTemplate()": {
+          "Lines": {
+            "45": 24
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::FormatUrl(System.Collections.Generic.IDictionary`2<System.String,System.String>)": {
+          "Lines": {
+            "48": 3,
+            "49": 3,
+            "50": 0,
+            "52": 5,
+            "53": 3
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 49,
+              "Offset": 20,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 41,
+              "EndOffset": 43,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 41,
+              "EndOffset": 52,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 3
+            }
+          ]
+        },
+        "System.Collections.Generic.IDictionary`2<System.String,System.String> Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::Mix(System.Collections.Generic.IDictionary`2<System.String,System.String>)": {
+          "Lines": {
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "65": 0,
+            "66": 0
+          },
+          "Branches": [
+            {
+              "Line": 57,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 57,
+              "Offset": 7,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 58,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 58,
+              "Offset": 36,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 114,
+              "EndOffset": 57,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 61,
+              "Offset": 85,
+              "EndOffset": 87,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 61,
+              "Offset": 85,
+              "EndOffset": 108,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 114,
+              "EndOffset": 116,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Threading.Tasks.Task`1<System.Boolean> Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::Send(Coder.WebPusherService.NotifyMessage)": {
+          "Lines": {
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "77": 0,
+            "78": 0,
+            "80": 0,
+            "81": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0
+          },
+          "Branches": [
+            {
+              "Line": 74,
+              "Offset": 59,
+              "EndOffset": 63,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 74,
+              "Offset": 59,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 74,
+              "Offset": 65,
+              "EndOffset": 89,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 74,
+              "Offset": 65,
+              "EndOffset": 109,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        },
+        "Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpFormSendContent Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::MakeDictContent(Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent)": {
+          "Lines": {
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpRawBodyContent Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::MakeRawContent(Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent)": {
+          "Lines": {
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::.ctor()": {
+          "Lines": {
+            "19": 27,
+            "20": 27,
+            "22": 27
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::.ctor(System.String)": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "27": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting::.cctor()": {
+          "Lines": {
+            "17": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService.Core\\Senders\\HttpSender\\Variable.cs": {
+      "Coder.WebPusherService.Senders.HttpSender.Variable": {
+        "System.String Coder.WebPusherService.Senders.HttpSender.Variable::get_Name()": {
+          "Lines": {
+            "6": 132
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.Senders.HttpSender.Variable::get_Value()": {
+          "Lines": {
+            "7": 132
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService.Core\\Senders\\HttpSender\\ViewModel\\HttpNotifySettingDetailViewModel.cs": {
+      "Coder.WebPusherService.Senders.HttpSender.ViewModel.NotifyBaseSetting": {
+        "System.String Coder.WebPusherService.Senders.HttpSender.ViewModel.NotifyBaseSetting::get_MessageType()": {
+          "Lines": {
+            "18": 26
+          },
+          "Branches": []
+        },
+        "System.Int32 Coder.WebPusherService.Senders.HttpSender.ViewModel.NotifyBaseSetting::get_RetrySpreadSeconds()": {
+          "Lines": {
+            "19": 48
+          },
+          "Branches": []
+        },
+        "System.Int32 Coder.WebPusherService.Senders.HttpSender.ViewModel.NotifyBaseSetting::get_MaxRetry()": {
+          "Lines": {
+            "20": 48
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Senders.HttpSender.ViewModel.NotifyBaseSetting::.ctor(Coder.WebPusherService.NotifySettingBase)": {
+          "Lines": {
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Senders.HttpSender.ViewModel.NotifyBaseSetting::.ctor()": {
+          "Lines": {
+            "14": 22,
+            "15": 22,
+            "17": 22
+          },
+          "Branches": []
+        }
+      },
+      "Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel": {
+        "System.Int32 Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel::get_Id()": {
+          "Lines": {
+            "40": 25
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel::get_Url()": {
+          "Lines": {
+            "41": 26
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.Senders.HttpSender.HttpNotifyMessageMethod Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel::get_Method()": {
+          "Lines": {
+            "42": 26
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.Senders.HttpSender.SendType Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel::get_SendType()": {
+          "Lines": {
+            "43": 25
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel::get_ContentType()": {
+          "Lines": {
+            "48": 5
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IList`1<Coder.WebPusherService.Senders.HttpSender.Variable> Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel::get_SubmitDataTemplate()": {
+          "Lines": {
+            "53": 52
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel::get_RawContentTemplate()": {
+          "Lines": {
+            "58": 25
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel::.ctor()": {
+          "Lines": {
+            "24": 22,
+            "25": 22,
+            "26": 22
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel::.ctor(Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting)": {
+          "Lines": {
+            "28": 1,
+            "29": 1,
+            "30": 0,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1
+          },
+          "Branches": [
+            {
+              "Line": 30,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 26,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService.Core\\Senders\\HttpSender\\HttpNotify\\HttpClientSender.cs": {
+      "Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpClientSender": {
+        "System.Boolean Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpClientSender::Send(Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpSendContent,Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "14": 0,
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "23": 0
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 7,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 26,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpClientSender::SentToHttp(Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpSendContent,Coder.WebPusherService.Senders.HttpSender.HttpNotifySetting)": {
+          "Lines": {
+            "27": 0,
+            "28": 0,
+            "31": 0,
+            "32": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "43": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "52": 0,
+            "53": 0
+          },
+          "Branches": [
+            {
+              "Line": 32,
+              "Offset": 21,
+              "EndOffset": 40,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 21,
+              "EndOffset": 73,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 21,
+              "EndOffset": 100,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 21,
+              "EndOffset": 127,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 46,
+              "Offset": 135,
+              "EndOffset": 137,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 46,
+              "Offset": 135,
+              "EndOffset": 185,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 186,
+              "EndOffset": 188,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 186,
+              "EndOffset": 201,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService.Core\\Senders\\HttpSender\\HttpNotify\\HttpFormSendContent.cs": {
+      "Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpFormSendContent": {
+        "System.Collections.Generic.IDictionary`2<System.String,System.String> Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpFormSendContent::get_Content()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Net.Http.HttpContent Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpFormSendContent::MakeContent(System.String)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpFormSendContent::MakeQueryString()": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpFormSendContent::MakeQueryString(System.Collections.Generic.IDictionary`2<System.String,System.String>)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": [
+            {
+              "Line": 23,
+              "Offset": 61,
+              "EndOffset": 17,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 61,
+              "EndOffset": 63,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService.Core\\Senders\\HttpSender\\HttpNotify\\HttpRawBodyContent.cs": {
+      "Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpRawBodyContent": {
+        "System.String Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpRawBodyContent::get_Content()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Net.Http.HttpContent Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpRawBodyContent::MakeContent(System.String)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": [
+            {
+              "Line": 13,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 14,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.String Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpRawBodyContent::MakeQueryString()": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService.Core\\Senders\\HttpSender\\HttpNotify\\HttpSendContent.cs": {
+      "Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpSendContent": {
+        "System.String Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpSendContent::get_Url()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpSendContent::get_ResponseCode()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String Coder.WebPusherService.Senders.HttpSender.HttpNotify.HttpSendContent::get_ResponseContent()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Coder.WebPusherService.dll": {
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService\\NotifyExtensions.cs": {
+      "Coder.WebPusherService.NotifyExtensions": {
+        "Microsoft.Extensions.DependencyInjection.IServiceCollection Coder.WebPusherService.NotifyExtensions::AddNotifyService(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action`1<Coder.WebPusherService.NotifyServiceOptions>)": {
+          "Lines": {
+            "11": 1,
+            "12": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService\\NotifyMessageException.cs": {
+      "Coder.WebPusherService.NotifyMessageException": {
+        "System.Void Coder.WebPusherService.NotifyMessageException::.ctor(System.String)": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService\\NotifyMessageManager.cs": {
+      "Coder.WebPusherService.NotifyMessageManager": {
+        "System.Threading.Tasks.Task Coder.WebPusherService.NotifyMessageManager::Send(Coder.WebPusherService.NotifyMessage)": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "55": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "64": 0,
+            "65": 0
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 32,
+              "EndOffset": 34,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 32,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 63,
+              "EndOffset": 65,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 63,
+              "EndOffset": 81,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 31,
+              "Offset": 124,
+              "EndOffset": 126,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 31,
+              "Offset": 124,
+              "EndOffset": 148,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 166,
+              "EndOffset": 168,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 166,
+              "EndOffset": 223,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 58,
+              "Offset": 241,
+              "EndOffset": 243,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 58,
+              "Offset": 241,
+              "EndOffset": 275,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 45,
+              "Offset": 67,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 47,
+              "Offset": 101,
+              "EndOffset": 103,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 47,
+              "Offset": 101,
+              "EndOffset": 153,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 45,
+              "Offset": 67,
+              "EndOffset": 166,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Coder.WebPusherService.NotifyMessageManager::Resume(System.Int32)": {
+          "Lines": {
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "74": 0,
+            "75": 0,
+            "77": 0,
+            "78": 0
+          },
+          "Branches": [
+            {
+              "Line": 70,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 70,
+              "Offset": 20,
+              "EndOffset": 50,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 75,
+              "Offset": 101,
+              "EndOffset": 78,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 75,
+              "Offset": 101,
+              "EndOffset": 103,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        },
+        "Coder.WebPusherService.NotifyMessage Coder.WebPusherService.NotifyMessageManager::Retry(System.Int32&)": {
+          "Lines": {
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.NotifyMessage Coder.WebPusherService.NotifyMessageManager::GetById(System.Int32)": {
+          "Lines": {
+            "88": 0,
+            "89": 0,
+            "90": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<Coder.WebPusherService.NotifyMessage> Coder.WebPusherService.NotifyMessageManager::FindByTag(System.String)": {
+          "Lines": {
+            "93": 0,
+            "94": 0,
+            "95": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.NotifyMessageManager::ResumeAll()": {
+          "Lines": {
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0
+          },
+          "Branches": [
+            {
+              "Line": 99,
+              "Offset": 56,
+              "EndOffset": 21,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 99,
+              "Offset": 56,
+              "EndOffset": 58,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Coder.WebPusherService.NotifyMessageManager::.ctor(Coder.WebPusherService.Stores.INotifyMessageStore,Coder.WebPusherService.Stores.INotifySettingStore,Coder.WebPusherService.Queues.NotifyQueue)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService\\NotifyServiceOptions.cs": {
+      "Coder.WebPusherService.NotifyServiceOptions": {
+        "Microsoft.Extensions.DependencyInjection.IServiceCollection Coder.WebPusherService.NotifyServiceOptions::get_Services()": {
+          "Lines": {
+            "12": 2
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.NotifyServiceOptions::.ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "7": 1,
+            "8": 1,
+            "9": 1,
+            "10": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService\\Queues\\NotifyMessageNode.cs": {
+      "Coder.WebPusherService.Queues.NotifyMessageNode": {
+        "Coder.WebPusherService.NotifyMessage Coder.WebPusherService.Queues.NotifyMessageNode::get_Message()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean Coder.WebPusherService.Queues.NotifyMessageNode::get_CanRun()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Queues.NotifyMessageNode::.ctor(Coder.WebPusherService.NotifyMessage,System.DateTimeOffset)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService\\Queues\\NotifyQueue.cs": {
+      "Coder.WebPusherService.Queues.NotifyQueue": {
+        "System.Int32 Coder.WebPusherService.Queues.NotifyQueue::get_Count()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.Queues.NotifyMessageNode Coder.WebPusherService.Queues.NotifyQueue::get_First()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Queues.NotifyQueue::Add(Coder.WebPusherService.NotifyMessage,System.DateTimeOffset)": {
+          "Lines": {
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": [
+            {
+              "Line": 20,
+              "Offset": 28,
+              "EndOffset": 30,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 28,
+              "EndOffset": 32,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Coder.WebPusherService.Queues.NotifyMessageNode Coder.WebPusherService.Queues.NotifyQueue::Dequeue()": {
+          "Lines": {
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Queues.NotifyQueue::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService\\Queues\\NotifyQueueService.cs": {
+      "Coder.WebPusherService.Queues.NotifyQueueService": {
+        "System.Void Coder.WebPusherService.Queues.NotifyQueueService::ResumeAll()": {
+          "Lines": {
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Queues.NotifyQueueService::_timer_Elapsed(System.Object,System.Timers.ElapsedEventArgs)": {
+          "Lines": {
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "49": 0,
+            "50": 0,
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0
+          },
+          "Branches": [
+            {
+              "Line": 40,
+              "Offset": 166,
+              "EndOffset": 90,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 43,
+              "Offset": 111,
+              "EndOffset": 113,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 43,
+              "Offset": 111,
+              "EndOffset": 144,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 40,
+              "Offset": 166,
+              "EndOffset": 168,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Coder.WebPusherService.Queues.NotifyQueueService::Push(Coder.WebPusherService.NotifyMessage,System.DateTimeOffset)": {
+          "Lines": {
+            "63": 0,
+            "64": 0,
+            "65": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Queues.NotifyQueueService::.ctor(System.IServiceProvider,Microsoft.Extensions.Logging.ILogger`1<Coder.WebPusherService.Queues.NotifyQueueService>)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "26": 0
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 81,
+              "EndOffset": 83,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 81,
+              "EndOffset": 95,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService\\Controllers\\HttpNotifyMessageController.cs": {
+      "Coder.WebPusherService.Controllers.HttpNotifyMessageController": {
+        "Microsoft.AspNetCore.Mvc.IActionResult Coder.WebPusherService.Controllers.HttpNotifyMessageController::Send(Coder.WebPusherService.Controllers.HttpNotifyMessageViewModel,System.String)": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult Coder.WebPusherService.Controllers.HttpNotifyMessageController::Get(System.Int32)": {
+          "Lines": {
+            "31": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0
+          },
+          "Branches": [
+            {
+              "Line": 34,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 20,
+              "EndOffset": 31,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult Coder.WebPusherService.Controllers.HttpNotifyMessageController::Retry(System.Int32)": {
+          "Lines": {
+            "43": 0,
+            "44": 0,
+            "46": 0,
+            "47": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult Coder.WebPusherService.Controllers.HttpNotifyMessageController::ListByTag(System.String)": {
+          "Lines": {
+            "51": 0,
+            "52": 0,
+            "53": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Controllers.HttpNotifyMessageController::.ctor(Coder.WebPusherService.NotifyMessageManager)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      },
+      "Coder.WebPusherService.Controllers.HttpNotifyMessageViewModel": {
+        "System.String Coder.WebPusherService.Controllers.HttpNotifyMessageViewModel::get_Tag()": {
+          "Lines": {
+            "58": 0
+          },
+          "Branches": []
+        },
+        "Coder.WebPusherService.Senders.HttpSender.HttpDictionaryContent Coder.WebPusherService.Controllers.HttpNotifyMessageViewModel::get_Content()": {
+          "Lines": {
+            "59": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\luqiz\\source\\repos\\coder.web.pusher.service\\src\\Coder.WebPusherService\\Controllers\\Manage\\HttpNotifySettingController.cs": {
+      "Coder.WebPusherService.Controllers.Manage.HttpNotifySettingController": {
+        "Microsoft.AspNetCore.Mvc.IActionResult Coder.WebPusherService.Controllers.Manage.HttpNotifySettingController::Get(System.Int32)": {
+          "Lines": {
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 0,
+            "26": 1,
+            "27": 1
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 20,
+              "EndOffset": 31,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult Coder.WebPusherService.Controllers.Manage.HttpNotifySettingController::List(System.String,System.Int32,System.Int32)": {
+          "Lines": {
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult Coder.WebPusherService.Controllers.Manage.HttpNotifySettingController::Save(Coder.WebPusherService.Senders.HttpSender.ViewModel.HttpNotifySettingDetailViewModel)": {
+          "Lines": {
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "53": 1,
+            "54": 1,
+            "55": 1,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "61": 1
+          },
+          "Branches": [
+            {
+              "Line": 39,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 39,
+              "Offset": 7,
+              "EndOffset": 16,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.IActionResult Coder.WebPusherService.Controllers.Manage.HttpNotifySettingController::Delete(System.Int32)": {
+          "Lines": {
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0
+          },
+          "Branches": []
+        },
+        "System.Void Coder.WebPusherService.Controllers.Manage.HttpNotifySettingController::.ctor(Coder.WebPusherService.Stores.INotifySettingStore)": {
+          "Lines": {
+            "15": 3,
+            "16": 3,
+            "17": 3,
+            "18": 3
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

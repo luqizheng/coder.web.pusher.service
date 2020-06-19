@@ -28,23 +28,53 @@ namespace Coder.WebPusherService
                 throw new ArgumentNullException(nameof(message), "message.messageType不能为空");
             var messageType = message.MessageType;
             var setting = _notifySettingStore.GetBy<NotifySettingBase>(messageType);
-
-            message.StartSend();
-
-            var task = setting.Send(message).ContinueWith(task =>
+            if (setting == null)
+                throw new NotifyMessageException("找不到类型是：" + messageType + "的设置");
+            if (setting.Status == NotifySettingStatus.Normal)
             {
-                var successSend = task.Result;
-                message.Sent(successSend);
+                message.StartSend();
 
+                var task = setting.Send(message).ContinueWith(task =>
+                {
+                    var successSend = task.Result;
+                    message.Sent(successSend);
+
+                    _notifyMessageStore.Update(message);
+                    _notifySettingStore.SaveChanged();
+
+                    if (!successSend)
+                    {
+                        if (message.SendCount <= setting.MaxRetry + 1)
+                            _queue.Add(message, DateTimeOffset.Now.AddSeconds(setting.RetrySpreadSeconds));
+                        else
+                            message.FailToSent();
+                    }
+                });
+
+
+                return task;
+            }
+
+            if (setting.Status == NotifySettingStatus.Pause)
+            {
                 _notifyMessageStore.Update(message);
                 _notifySettingStore.SaveChanged();
+            }
 
-                if (!successSend && message.SendCount <= (setting.MaxRetry + 1))
-                    _queue.Add(message, DateTimeOffset.Now.AddSeconds(setting.RetrySpreadSeconds));
-            });
+            return Task.FromResult(0);
+        }
+
+        public void Resume(int id)
+        {
+            var setting = _notifySettingStore.GetById<NotifySettingBase>(id);
+            if (setting == null)
+                throw new NotifyMessageException("找不到id是：" + id + "的设置");
 
 
-            return task;
+            var messages = _notifyMessageStore.GetUnsentMessage(setting.MessageType);
+            foreach (var message in messages) Send(message);
+
+            setting.Resume();
         }
 
         public NotifyMessage Retry(in int id)
@@ -62,6 +92,15 @@ namespace Coder.WebPusherService
         public IEnumerable<NotifyMessage> FindByTag(string tag)
         {
             return _notifyMessageStore.FindByTag(tag);
+        }
+
+        public void ResumeAll()
+        {
+            foreach (var setting in _notifySettingStore.GetAll<NotifySettingBase>())
+            {
+                setting.Pause();
+                Resume(setting.Id);
+            }
         }
     }
 }

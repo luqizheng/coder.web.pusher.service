@@ -1,13 +1,13 @@
-﻿using System;
+﻿using Microsoft.Extensions.Logging;
+using System;
 using System.Timers;
-using Microsoft.Extensions.Logging;
 
 namespace Coder.WebPusherService.Queues
 {
     public class NotifyQueueService
     {
-        private readonly IServiceProvider _provider;
         private readonly ILogger<NotifyQueueService> _logger;
+        private readonly IServiceProvider _provider;
         private readonly NotifyQueue _queue;
         private readonly Timer _timer;
 
@@ -23,6 +23,13 @@ namespace Coder.WebPusherService.Queues
             _logger = logger;
         }
 
+        private bool _fromPersistent = false;
+        private void ResumeAll()
+        {
+            var manager = _provider.GetService(typeof(NotifyMessageManager)) as NotifyMessageManager;
+            manager.ResumeAll();
+            _fromPersistent = true;
+        }
         private void _timer_Elapsed(object sender, ElapsedEventArgs e)
         {
             var manager = _provider.GetService(typeof(NotifyMessageManager)) as NotifyMessageManager;

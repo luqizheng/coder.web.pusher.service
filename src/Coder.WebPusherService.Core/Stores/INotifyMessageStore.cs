@@ -9,5 +9,6 @@ namespace Coder.WebPusherService.Stores
         void SaveChange();
         NotifyMessage GetById(int id);
         IEnumerable<NotifyMessage> FindByTag(string tag);
+        IEnumerable<NotifyMessage> GetUnsentMessage(string settingMessageType);
     }
 }

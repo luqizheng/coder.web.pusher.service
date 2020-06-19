@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Net.Http;
-using System.Text;
-using Coder.WebPusherService.Senders.HttpSender;
+﻿using Coder.WebPusherService.Senders.HttpSender;
 using Coder.WebPusherService.ViewModels;
 using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Text;
 
 namespace Coder.WebPusherClient
 {
@@ -22,6 +23,7 @@ namespace Coder.WebPusherClient
         public NotifyMessageViewModel<HttpDictionaryContent> Send(HttpDictionaryContent content, string messageType,
             string tag)
         {
+            if (messageType == null) throw new ArgumentNullException(nameof(messageType));
             var data = new
             {
                 content,

@@ -29,8 +29,8 @@ namespace Coder.WebPusherService.Controllers.Manage
         [HttpGet("list")]
         public IActionResult List(string messageType, int page, int pageSize)
         {
-            var result = _settingStore.List<HttpNotifySetting>(messageType, page, pageSize,out var total);
-            return Json(new {data = result, total});
+            var result = _settingStore.List<HttpNotifySetting>(messageType, page, pageSize, out var total);
+            return Json(new { data = result, total });
         }
 
         [HttpPost("save")]
@@ -42,7 +42,7 @@ namespace Coder.WebPusherService.Controllers.Manage
             result.Url = notifySettingBase.Url;
             result.SendType = notifySettingBase.SendType;
             result.Method = notifySettingBase.Method;
-            result.ContentType = notifySettingBase.ContentType;
+            result.SendContentType = notifySettingBase.ContentType;
             result.SubmitDataTemplate = notifySettingBase.SubmitDataTemplate;
             result.RawContentTemplate = notifySettingBase.RawContentTemplate;
 
@@ -52,7 +52,7 @@ namespace Coder.WebPusherService.Controllers.Manage
             try
             {
                 _settingStore.SaveOrUpdate(result);
-                return Json(new NotifyResult { Id = notifySettingBase.Id, Success = true });
+                return Json(new NotifyResult { Id = result.Id, Success = true });
             }
             catch (NotifySettingException ex)
             {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace Coder.WebPusherService
 {
@@ -6,7 +7,8 @@ namespace Coder.WebPusherService
     {
         Wait,
         Sending,
-        Sent
+        Sent,
+        Fail
     }
 
 

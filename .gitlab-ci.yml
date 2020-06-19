@@ -1,0 +1,34 @@
+stages:
+    - setup  
+    - test
+    - deploy
+setup:
+    stage: setup
+    allow_failure: true
+    script:      
+        - 'dotnet restore'
+    tags:
+        - coder
+
+unitTest:
+    stage:test
+    script:
+        - 'cd XUnitTestProject1'
+        - 'dotnet test --logger "trx;LogFileName=testreport.trx'
+    after_script:
+        - trx2junit XUnitTestProject1/TestResults/testreport.trx 
+    artifacts:
+        reports:
+            junit: XUnitTestProject1/TestResults/testreport.xml
+
+coder_members:
+    stage: deploy
+    script:
+        - 'cd Coder.WebPuseherService.Hosting'
+        - 'systemctl stop coder_web_pusher'
+        - 'mkdir -p coder_web_pusher'
+        - 'dotnet publish -o /var/www/coder_web_pusher'
+        - 'systemctl restart coder_web_pusher'
+    tags:
+        - coder
+        

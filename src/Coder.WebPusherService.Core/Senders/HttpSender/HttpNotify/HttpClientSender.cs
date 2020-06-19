@@ -36,10 +36,10 @@ namespace Coder.WebPusherService.Senders.HttpSender.HttpNotify
                     responseTask = httpClient.GetAsync(message.Url + "?" + queryString);
                     break;
                 case HttpNotifyMessageMethod.POST:
-                    responseTask = httpClient.PostAsync(message.Url, message.MakeContent(setting.ContentType));
+                    responseTask = httpClient.PostAsync(message.Url, message.MakeContent(setting.SendContentType));
                     break;
                 case HttpNotifyMessageMethod.PUT:
-                    responseTask = httpClient.PutAsync(message.Url, message.MakeContent(setting.ContentType));
+                    responseTask = httpClient.PutAsync(message.Url, message.MakeContent(setting.SendContentType));
                     break;
             }
 

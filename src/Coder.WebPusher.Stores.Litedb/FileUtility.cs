@@ -19,11 +19,11 @@ namespace Coder.WebPusher
         {
             if (folder == null) throw new ArgumentNullException(nameof(folder));
             var ary = folder.Split('/', '\\');
-            var starck = new Stack<string>(ary);
+            var sta = new Stack<string>(ary);
 
-            while (starck.Count != 0)
+            while (sta.Count != 0)
             {
-                var parentDir = starck.Pop();
+                var parentDir = sta.Pop();
                 if (!Directory.Exists(parentDir)) Directory.CreateDirectory(parentDir);
             }
         }
