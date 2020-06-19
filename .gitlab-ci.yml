@@ -20,6 +20,8 @@ unitTest:
     artifacts:
         reports:
             junit: XUnitTestProject1/TestResults/testreport.xml
+     tags:
+        - coder
 
 coder_members:
     stage: deploy
